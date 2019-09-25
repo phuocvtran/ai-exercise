@@ -37,7 +37,8 @@ public:
         return this->matrix[u - 1][v - 1] == 1;
     }
 
-    // Kiểm tra đã hoàn thành tô màu chưa nếu tìm thấy -1 trong vector tức còn đỉnh chưa tô màu
+    // Kiểm tra đã hoàn thành tô màu chưa nếu tìm thấy
+    // -1 trong vector tức còn đỉnh chưa tô màu
     bool isDoneColoring(vector<int> isColoredWith)
     {
         return find(isColoredWith.begin() + 1, isColoredWith.end(), -1) == isColoredWith.end();
@@ -47,14 +48,15 @@ public:
     {
         vector<vector<int>> result;
         vector<int> vertexList;
-        // Lưu màu của từng đỉnh -1 tức chưa tô
+        // Vector lưu màu của từng đỉnh
+        // -1 tức chưa tô
         vector<int> isColoredWith(this->nVertex + 1, -1);
         // Màu đang sử dụng
         int currColor = 0;
 
         /**
-        Khi chưa tô màu hết tất cả các đỉnh thực hiện
-        tô màu đang sử dụng cho tất cả các đỉnh hợp lệ
+        Khi chưa tô màu hết tất cả các đỉnh
+        thì tô màu đang sử dụng cho tất cả các đỉnh hợp lệ
         sau đó đổi màu và tiếp tục tô màu cho đến khi tô hết
         **/
         while (!isDoneColoring(isColoredWith))
