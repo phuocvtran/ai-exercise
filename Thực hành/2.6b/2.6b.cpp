@@ -77,14 +77,18 @@ public:
                 vTime.push_back(getLength(curr, i));
                 q.push(i);
             }
+            else
+            {
+                vTime.push_back(-1);
+            }
         }
 
         // Xét đỉnh tiếp theo trong hàng đợi
-        for (int i = 0; !q.empty(); ++i)
+        while (!q.empty())
         {
             int next = q.front();
             q.pop();
-            BFS(next, goal, currPath, allPaths, time, vTime[i], isVisited);
+            BFS(next, goal, currPath, allPaths, time, vTime[next - 1], isVisited);
         }
     }
 };
