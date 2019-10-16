@@ -1,0 +1,4 @@
+input:	Dòng 1: n, e, s lần lượt là số đỉnh, số cạnh của đồ thị và điểm xuất phát
+	e dòng tiếp theo: nU, nV là cạnh của đồ thị (nU, nV biểu diễn bằng số, vd:  1 2)
+
+output: Kết quả thực hiện BFS và DFS trên đồ thị

@@ -1,0 +1,4 @@
+input:	Dòng 1: n, e, s, g lần lượt là số đỉnh, số cạnh của đồ thị, điểm bắt đầu và đích đến
+	e dòng tiếp theo: nU, nV là cạnh của đồ thị (nU, nV biểu diễn bằng số, vd:  1 2)
+
+output: Tất cả đường đi tìm được bằng DFS và BFS

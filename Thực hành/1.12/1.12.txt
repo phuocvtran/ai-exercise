@@ -1,0 +1,11 @@
+input:	Dòng 1: m, j lần lượt là số máy và số công việc
+	m dòng tiếp theo: t1 ... tj là thời gian máy hoàn thành từng công việc
+
+output: Kết quả là lịch gia công theo thuật giải Johnson
+
+test mẫu:
+2 6
+11 8 6 4 3 5
+7 6 9 10 8 4
+
+KQ: E D C A B F

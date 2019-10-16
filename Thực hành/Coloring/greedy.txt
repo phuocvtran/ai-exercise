@@ -1,0 +1,4 @@
+input:	Dòng 1: n, e lần lượt là số đỉnh và số cạnh của đồ thị
+	e dòng tiếp theo: nU, nV là cạnh của đồ thị (nU, nV biểu diễn bằng số, vd:  1 2)
+
+output: Kết quả tô màu tham lam và tham lam có thứ tự

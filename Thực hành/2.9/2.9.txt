@@ -1,0 +1,6 @@
+input:	Dòng 1: n, e, s lần lượt là số đỉnh, số cạnh của đồ thị và điểm bắt đầu
+	e dòng tiếp theo: nU, nV, w 
+			  Với nU, nV biểu diễn cạnh của đồ thị (nU, nV biểu diễn bằng số, vd:  1 2)
+                              w là trọng số của cạnh đó
+
+output: Kết quả là chu trình Hamilton bắt đầu tại s có trọng số nhỏ nhất tìm bằng DFS

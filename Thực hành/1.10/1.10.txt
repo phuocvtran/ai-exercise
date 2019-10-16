@@ -1,0 +1,20 @@
+input:	Dòng 1: m là số máy
+	Dòng 2: j là số công việc
+	j dòng tiếp theo: t là thời gian máy hoàn thành công việc thứ i
+
+output: Kết quả là lịch gia công cho từng máy
+
+test mẫu:
+3
+6
+6
+9
+12
+5
+8
+5
+
+KQ:
+	Máy 1: 1 5
+	Máy 2: 2 4
+	Máy 3: 3 6
