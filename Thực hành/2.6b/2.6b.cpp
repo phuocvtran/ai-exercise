@@ -62,12 +62,9 @@ public:
         }
 
         // Nếu đỉnh chưa đi qua thì lưu đỉnh vào đường hiện tại và cập nhật tổng thời gian
-        if (isVisited[curr - 1] == false)
-        {
-            isVisited[curr - 1] = true;
-            currPath.push_back(curr);
-            time += tmpTime;
-        }
+        isVisited[curr - 1] = true;
+        currPath.push_back(curr);
+        time += tmpTime;
 
         // Tìm tất cả các đỉnh nối với đỉnh hiện tại đang xét
         // lưu tất cả trọng số và cho vào hàng đợi
@@ -83,7 +80,7 @@ public:
         }
 
         // Xét đỉnh tiếp theo trong hàng đợi
-        for (int i = 0; q.size() > 0; ++i)
+        for (int i = 0; !q.empty(); ++i)
         {
             int next = q.front();
             q.pop();
